@@ -42,13 +42,13 @@ class Airplane {
 
 class Person {
   constructor(name, age){
-  this.name = name;
-  this.age = age;
-  this.stomach = [];
+    this.name = name;
+    this.age = age;
+    this.stomach = [];
   }
   eat(edible){
     if (this.stomach.length < 10){
-  this.stomach.push(edible);
+      this.stomach.push(edible);
     }
   }
   poop(){
@@ -57,7 +57,7 @@ class Person {
   toString(){
     return `${this.name}, ${this.age}`
   }
-  }
+}
 
 /*
   TASK 2
@@ -184,15 +184,15 @@ class Student extends Lambdasian{
   sprintChallenge(subject){
     return `${this.name} has begun sprint challenge on ${subject}`
   }
-  willGraduate(grade){
+  graduating(grade){
     if(grade > 70){
-      return `Congragulation! ${this.name} Job well done, you passed!`;
+      return `Congratulation! ${this.name} Job well done, you passed!`;
     }
     else{
       return `I'm so sorry ${this.name}! You need more practice.`
     }
   }
-
+}
 /*
   TASK 6
     - Write a ProjectManager class extending Instructor.
@@ -208,18 +208,18 @@ class Student extends Lambdasian{
 */
 
 class ProjectManager extends Instructor {
-  constructor(theTeacher){
-    super(theTeacher);
-    this.gradClassName = theTeacher.gradClassName;
-    this.favInstructor = theTeacher.favInstructor;
-    }
-    standUp(channel) {
-      return `${this.name} announces to ${channel}, @channel standy times!`;
-    }
-    debugsCode(student, subject){
-      return `${this.name} debugs ${student.name}'s code on ${subject}`
-    }
+  constructor(alumni){
+    super(alumni);
+    this.gradClassName = alumni.gradClassName;
+    this.favInstructor = alumni.favInstructor;
   }
+  standUp(channel) {
+    return `${this.name} announces to ${channel}, @channel standy times!`;
+  }
+  debugsCode(student, subject){
+    return `${this.name} debugs ${student.name}'s code on ${subject}`
+    }
+}
 
 /*
   STRETCH PROBLEM (no tests!)
