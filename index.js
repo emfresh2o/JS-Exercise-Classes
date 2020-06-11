@@ -208,10 +208,10 @@ class Student extends Lambdasian{
 */
 
 class ProjectManager extends Instructor {
-  constructor(leadTeacher){
-    super(leadTeacher;
-    this.gradClassName = leadTeacher.gradClassName;
-    this.favInstructor = leadTeacher.favInstructor;
+  constructor(theTeacher){
+    super(theTeacher);
+    this.gradClassName = theTeacher.gradClassName;
+    this.favInstructor = theTeacher.favInstructor;
     }
     standUp(channel) {
       return `${this.name} announces to ${channel}, @channel standy times!`;
