@@ -95,7 +95,6 @@ class Car {
       return `I ran out of fuel at ${this.odometer} miles!`
     }
   }
-
 }
 
 /*
@@ -119,7 +118,6 @@ class Lambdasian {
   speak(){
     return `Hello my name is ${this.name}, I am from ${this.location}`
   }
-
 }
 
 /*
@@ -149,7 +147,6 @@ class Instructor extends Lambdasian {
   grade (student, subject){
     return `${student.name} receives a perfect score on ${subject}`
   }
-
 }
 
 /*
